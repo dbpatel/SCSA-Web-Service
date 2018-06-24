@@ -1,0 +1,22 @@
+{
+  "name": "scsa-web-service",
+  "version": "1.0.0",
+  "description": "Web service built to communicate with SCSA Alexa Skill",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "alexa",
+    "scsa"
+  ],
+  "author": "Darshak Patel",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-message-builder": "1.2.0",
+    "body-parser": "1.18.3",
+    "express": "4.16.3",
+    "morgan": "1.9.0"
+  }
+}

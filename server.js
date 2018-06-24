@@ -1,9 +1,14 @@
-const http = require('http');
+const https = require('https');
+const fs = require('fs');
 
 // Local Imports
 const config = require('./config/config');
 const app = require('./app'); // express app
 
 // Create HTTP Server
-const server = http.createServer(app);
+const server = https.createServer({
+  key: fs.readFileSync(config.testCert.keyPath),
+  cert: fs.readFileSync(config.testCert.certPath),
+  passphrase: config.testCert.passphrase
+}, app);
 server.listen(config.app.port);

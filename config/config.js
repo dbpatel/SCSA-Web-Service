@@ -3,9 +3,8 @@ const config = {
     port: 3000
   },
   testCert:{
-    keyPath: './x509_test_cert/key.pem',
-    certPath: './x509_test_cert/cert.pem',
-    passphrase: '3141'
+    keyPath: './x509_test_cert/private-key.pem',
+    certPath: './x509_test_cert/certificate.pem'
   }
 };
 

@@ -1,6 +1,6 @@
 const config = {
   app: {
-    port: 3000
+    port: 443
   },
   testCert:{
     keyPath: './x509_test_cert/private-key.pem',

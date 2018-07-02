@@ -5,7 +5,7 @@ const AlexaMessageBuilder = require('alexa-message-builder');
 const router = express.Router();
 
 // Response Messages
-const launchReqPrompt = "<speak>Welcome to Alexa's Self Care! What would you like to do?</speak>";
+const launchReqPrompt = "<speak>Welcome to Alexa Health Assistant! What would you like to do?</speak>";
 const launchReqReprompt = "<speak>Is there anything I can help you with?</speak>";
 
 router.use((req, res, next) => {

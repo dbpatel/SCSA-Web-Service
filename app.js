@@ -7,9 +7,6 @@ const app = express();
 
 // Import Internal Routes
 const requestRoutes = require('./routes/requests');
-const launchRequestRoutes = require('./routes/launchRequests');
-const sessionEndedRequestRoutes = require('./routes/sessionEndedRequests');
-const intentRequestRoutes = require('./routes/intentRequests');
 
 // Pass request to logger middleware
 app.use(morganLogger('dev')); // TODO: proper logging configurations and use
@@ -20,12 +17,6 @@ app.use(bodyParser.json());
 
 // Route for all incoming requsts
 app.use(requestRoutes);
-
-// Routes for different request types
-app.use('/LaunchRequest', launchRequestRoutes);
-app.use('/SessionEndedRequest', sessionEndedRequestRoutes);
-app.use('/IntentRequest', intentRequestRoutes);
-
 
 // Error Handler for Requests that don't match any routes
 
